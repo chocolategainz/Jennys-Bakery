@@ -4,6 +4,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link rel="stylesheet" href="Good Foods.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 <head>
  <title>Good Foods</title> <!--Placeholder-->   
@@ -21,6 +24,9 @@
     <!--Title-->
   <div class = "headerBar"> 
   <header>
+<!--Delivery Page GEO-location API(This will allow the user type their address information)-->
+
+
    <!--Jenny's--> 
    <a href = "file:///C:/Users/User/Documents/Javascript%20March%202023/Bakery%20web%20app/Good%20Foods.html">
 <img src = "Jenny_s_Bakery_LOGO-removebg-preview.png" alt="logo"
@@ -34,7 +40,8 @@ width="45px">
 
 
 <!--shopping cart-->
-<a href = "shopping cart information.html"> 
+<!--Use AJAX to load the page dynamically without the user needing to reload the page-->
+<a href = ""> 
 <img src = "icons8-shopping-cart-60.png" alt = "shopping_cart"
 width = 40px>
 </a>
@@ -47,12 +54,13 @@ width = 40px>
   </div>
  </div>
 </div>
-
-<div id="menuBarColor"> 
- <div class="containerFluidMenu">
+ 
+ <ul id = mainMenu> 
+  <div class="containerFluidMenu">
   <div class="container">
     <div class="row">
-      <div class="col d-flex">
+      <div class="col d-flex justify-content-evenly">
+        
   <!--Navigation bar-->   
 <li><a href = "">Cakes</a></li>
 <li><a href = ""> Cupcakes</a></li>
@@ -65,7 +73,7 @@ width = 40px>
  </div>
   </div>
    </div>
-    </div>
+  </ul>
 
 
 
@@ -108,6 +116,139 @@ width = 40px>
     </button>
   </div>
   
+  <!--Caption-->
+<br>
+  <div class = "captions">
+     <div><b>Authentic British Cakes & Desserts</b></div> 
+    <div id = "captionTwo">Baking the right cake to suit your every occassion</div>  
+    </div>
+
+
+    <!--Bestsellers and actual cake content for my shopping cart.
+    This will include a view more button-->
+    <br>
+ <content>
+  <!--BestSellers:-->
+<p id = "bestSellingCakes">Jenny's <span>Bestsellers</span> </p>
+<br>
+<!-- 
+
+<div class = "filterButtons"> Filter: 
+<button>All</button>
+<button>Cakes</button>
+<button>Cupcakes</button>
+<button>Pies</button>
+</div>
+-->
+<br>
+<!--Bestselling desserts
+<div class = "bestsellingContainer">
+ <div class = "devilCake">
+  <a href = ""> 
+<img src = "Devil's Chocolate Food Cake_prev_ui.png" alt = "Devil's Chocolate Food Cake"
+width = "430px">
+<p>Chocolate Devil's Food Cake</p>
+<p>£40.00</p>
+</a>
+ </div>  
+
+</div>
+-->
+
+<!--This will apply the filters to each button-->
+<button id = "allCakes">All</button>
+<button id = "cakes">Cakes</button>
+<button id = "cupcakes">Cupcakes</button>
+<button id = "pies">Pies</button>
+
+
+<!--Each div represents an item that can be filtered-->
+<div class = "filteredItems"> 
+  <div class = "itemOne"> 
+    <a href = "">
+  <img src = "Devil's Chocolate Food Cake_prev_ui.png" alt = "Devil's Chocolate Food Cake"
+  width = "430px">
+  <p>Chocolate Devil's Food Cake</p>
+<p>£40.00</p>
+  </a>
+  </div>
+
+<!--Red Velvet Cake-->
+  <div class = "itemTwo">
+    <a href = "">
+      <img src = "Cakes/Baking Bestsellers pictures/RED-VELVET-CAKE-23-S-01_prev_ui.png" alt="Red Velvet Cake"
+      width = "330px">
+      <p>Red Velvet Cake</p>
+<p>£30.00</p>
+    </a>
+  </div>
+
+  <!--Rasberry lemon cake-->
+  <div class = "itemThree">
+    <a href = "">
+      <img src = "Cakes/images-removebg-preview.png" alt="Rasberry lemon cake"
+      width = "330px">
+      <p>Rasberry Lemon Cake</p>
+<p>£45.00</p>
+    </a>
+  </div>
+
+  <!--Rasberry lemon cake-->
+  <div class = "itemFour">
+    <a href = "">
+      <img src = "Cakes/cupcake_vinalla-removebg-preview.png" alt="Vanilla cake"
+      width = "330px">
+      <p>Vanilla Mini Cupcakes</p>
+<p>£1.50</p>
+    </a>
+  </div>
+
+  <div class = "itemFive">
+    <a href = "">
+      <img src = "Cakes/larrot_cake-removebg-preview.png" alt="Carrot cake"
+      width = "330px">
+      <p>Carrot Cupcakes</p>
+<p>£3.00</p>
+    </a>
+  </div>
+
+  <div class = "itemSix">
+    <a href = "">
+      <img src = "Cakes/oreo_cake-removebg-preview.png" alt="Cookies & Cream cupcake"
+      width = "330px">
+      <p>Cookies & Cream Cupcakes</p>
+<p>£3.50</p>
+    </a>
+  </div>
+
+  <div class = "itemSeven">
+    <a href = "">
+      <img src = "Cakes/pecan_1_-removebg-preview.png" alt="Pecan Pie"
+      width = "330px">
+      <p>Pecan Pie</p>
+<p>£32.00</p>
+    </a>
+  </div>
+
+  <div class = "itemEight">
+    <a href = "">
+      <img src = "Cakes/key-lime-pie-removebg-preview.png" alt="Key lime Pie"
+      width = "330px">
+      <p>Key Lime Pie</p>
+<p>£40.00</p>
+    </a>
+  </div>
+
+  <div class = "itemNine">
+    <a href = "">
+      <img src = "Cakes/pumpkinPiiiie-removebg-preview.png" alt="Pumpkin Pie"
+      width = "330px">
+      <p>Pumpkin Pie</p>
+<p>£35.00</p>
+    </a>
+  </div> 
+</div>
+  </content>
   
         
        
