@@ -155,18 +155,19 @@ width = "430px">
 </div>
 -->
 
-<!--This will apply the filters to each button-->
-<button id = "allCakes">All</button>
-<button id = "cakes">Cakes</button>
-<button id = "cupcakes">Cupcakes</button>
-<button id = "pies">Pies</button>
+<!--This will apply the filters to each button. Give each button a data attribute and a class to specify its
+filter category-->
+<button class = "filter" data-filter = "all">All</button>
+<button class = "filter" data-filter = "bigCakes">Cakes</button>
+<button class = "filter" data-filter = "smallCake">Cupcakes</button>
+<button class = "filter" data-filter = "pieTime">Pies</button>
 
 
-<!--Each div represents an item that can be filtered-->
+<!--Each div represents an item that can be filtered. Give each item a common class-->
 <div class = "filteredItems"> 
-  <div class = "itemOne"> 
+  <div class = "item bigCakes"> 
     <a href = "">
-  <img src = "Devil's Chocolate Food Cake_prev_ui.png" alt = "Devil's Chocolate Food Cake"
+  <img class = "" src = "Devil's Chocolate Food Cake_prev_ui.png" alt = "Devil's Chocolate Food Cake"
   width = "430px">
   <p>Chocolate Devil's Food Cake</p>
 <p>£40.00</p>
@@ -174,7 +175,7 @@ width = "430px">
   </div>
 
 <!--Red Velvet Cake-->
-  <div class = "itemTwo">
+  <div class = "item bigCakes">
     <a href = "">
       <img src = "Cakes/Baking Bestsellers pictures/RED-VELVET-CAKE-23-S-01_prev_ui.png" alt="Red Velvet Cake"
       width = "330px">
@@ -184,7 +185,7 @@ width = "430px">
   </div>
 
   <!--Rasberry lemon cake-->
-  <div class = "itemThree">
+  <div class = "item bigCakes">
     <a href = "">
       <img src = "Cakes/images-removebg-preview.png" alt="Rasberry lemon cake"
       width = "330px">
@@ -194,7 +195,7 @@ width = "430px">
   </div>
 
   <!--Rasberry lemon cake-->
-  <div class = "itemFour">
+  <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/cupcake_vinalla-removebg-preview.png" alt="Vanilla cake"
       width = "330px">
@@ -203,7 +204,7 @@ width = "430px">
     </a>
   </div>
 
-  <div class = "itemFive">
+  <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/larrot_cake-removebg-preview.png" alt="Carrot cake"
       width = "330px">
@@ -212,7 +213,7 @@ width = "430px">
     </a>
   </div>
 
-  <div class = "itemSix">
+  <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/oreo_cake-removebg-preview.png" alt="Cookies & Cream cupcake"
       width = "330px">
@@ -221,7 +222,7 @@ width = "430px">
     </a>
   </div>
 
-  <div class = "itemSeven">
+  <div class = "item pieTime">
     <a href = "">
       <img src = "Cakes/pecan_1_-removebg-preview.png" alt="Pecan Pie"
       width = "330px">
@@ -230,7 +231,7 @@ width = "430px">
     </a>
   </div>
 
-  <div class = "itemEight">
+  <div class = "item pieTime">
     <a href = "">
       <img src = "Cakes/key-lime-pie-removebg-preview.png" alt="Key lime Pie"
       width = "330px">
@@ -239,7 +240,7 @@ width = "430px">
     </a>
   </div>
 
-  <div class = "itemNine">
+  <div class = "item pieTime">
     <a href = "">
       <img src = "Cakes/pumpkinPiiiie-removebg-preview.png" alt="Pumpkin Pie"
       width = "330px">
@@ -249,9 +250,7 @@ width = "430px">
   </div> 
 </div>
   </content>
-  
-        
-       
+
   
   
   <!--JavaScript with Bootstrap-->
