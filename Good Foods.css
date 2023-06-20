@@ -1,21 +1,22 @@
 body {
     max-width: 100%;
-    max-height: 100%;
-   
+    max-height: 100%;  
 }
 
+/*
 .container {
     margin-top: 10px; 
 }
-
+*/
 .containerFluidMenu {
-    height: 65px;
+    height: 50px;
+    background:#A6E4FF;
 }
 
-#mainMenu {
-    list-style-type: none;
+.menuList {
+   list-style-type: none; 
+   padding-top:12px;
 }
-
 a {
     text-decoration: none;
 }
@@ -46,5 +47,55 @@ span {
     margin-left: 20px;
 }
 
+
+.cakeBoxModel {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.boxModelTwo {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+
+
+}
+
+.pieBoxModel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.newsIntroduction {
+    font-size: 60px;
+    font-family: "great vibes";
+    
+}
+
+#news {
+   color:#ff1493; 
+}
+
+.cookBookText {
+font-weight:bold;
+}
+
+/*Mailing Newsletter to users*/
+.mailinglistIntro {
+    font-size: 50px;
+    font-family: "great vibes";
+}
+
+#mailinglistDesign {
+    color:#ff1493; 
+}
+
+.mailinglistInfo{
+    font-size:large;
+}
 
 

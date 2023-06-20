@@ -55,25 +55,27 @@ width = 40px>
  </div>
 </div>
  
- <ul id = mainMenu> 
+
   <div class="containerFluidMenu">
   <div class="container">
     <div class="row">
-      <div class="col d-flex justify-content-evenly">
-        
-  <!--Navigation bar-->   
-<li><a href = "">Cakes</a></li>
-<li><a href = ""> Cupcakes</a></li>
-<li><a href = "">Pies</a></li>
-<li><a href = ""> Brownies & Cookies </a></li>
-<li><a href = "">  Occassions </a></li>
-<li><a href = ""> Corporate </a></li>
-<li><a href = ""> Gifts </a></li>
+      <div class="col d-flex justify-content-evenly">     
+           
+  <!--Navigation bar-->
+    
+<li class = menuList> <a href = "">Cakes</a></li>
+<li class = menuList><a href = ""> Cupcakes</a></li>
+<li class = menuList><a href = "">Pies</a></li>
+<li class = "menuList"><a href = ""> Brownies & Cookies </a></li>
+<li class = "menuList"><a href = "">  Occassions </a></li>
+<li class = "menuList"><a href = ""> Corporate </a></li>
+<li class = "menuList"><a href = ""> Gifts </a></li>
+ 
 </div>
  </div>
   </div>
    </div>
-  </ul>
+  
 
 
 
@@ -165,10 +167,11 @@ filter category-->
 
 <!--Each div represents an item that can be filtered. Give each item a common class-->
 <div class = "filteredItems"> 
+  <div class = "cakeBoxModel"> 
   <div class = "item bigCakes"> 
     <a href = "">
   <img class = "" src = "Devil's Chocolate Food Cake_prev_ui.png" alt = "Devil's Chocolate Food Cake"
-  width = "430px">
+  width = "330px">
   <p>Chocolate Devil's Food Cake</p>
 <p>£40.00</p>
   </a>
@@ -178,7 +181,7 @@ filter category-->
   <div class = "item bigCakes">
     <a href = "">
       <img src = "Cakes/Baking Bestsellers pictures/RED-VELVET-CAKE-23-S-01_prev_ui.png" alt="Red Velvet Cake"
-      width = "330px">
+      width = "230px">
       <p>Red Velvet Cake</p>
 <p>£30.00</p>
     </a>
@@ -188,17 +191,20 @@ filter category-->
   <div class = "item bigCakes">
     <a href = "">
       <img src = "Cakes/images-removebg-preview.png" alt="Rasberry lemon cake"
-      width = "330px">
+      width = "230px">
       <p>Rasberry Lemon Cake</p>
 <p>£45.00</p>
     </a>
   </div>
+</div>
 
+<!--CupCakes-->
   <!--Rasberry lemon cake-->
+  <div class = "boxModelTwo"> 
   <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/cupcake_vinalla-removebg-preview.png" alt="Vanilla cake"
-      width = "330px">
+      width = "230px">
       <p>Vanilla Mini Cupcakes</p>
 <p>£1.50</p>
     </a>
@@ -207,7 +213,7 @@ filter category-->
   <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/larrot_cake-removebg-preview.png" alt="Carrot cake"
-      width = "330px">
+      width = "230px">
       <p>Carrot Cupcakes</p>
 <p>£3.00</p>
     </a>
@@ -216,16 +222,19 @@ filter category-->
   <div class = "item smallCake">
     <a href = "">
       <img src = "Cakes/oreo_cake-removebg-preview.png" alt="Cookies & Cream cupcake"
-      width = "330px">
+      width = "230px">
       <p>Cookies & Cream Cupcakes</p>
 <p>£3.50</p>
     </a>
   </div>
+</div>
 
-  <div class = "item pieTime">
+<!--Pies-->
+<div class = "pieBoxModel">
+  <div class = "item pieTime">  
     <a href = "">
       <img src = "Cakes/pecan_1_-removebg-preview.png" alt="Pecan Pie"
-      width = "330px">
+      width = "230px">
       <p>Pecan Pie</p>
 <p>£32.00</p>
     </a>
@@ -234,7 +243,7 @@ filter category-->
   <div class = "item pieTime">
     <a href = "">
       <img src = "Cakes/key-lime-pie-removebg-preview.png" alt="Key lime Pie"
-      width = "330px">
+      width = "230px">
       <p>Key Lime Pie</p>
 <p>£40.00</p>
     </a>
@@ -243,16 +252,87 @@ filter category-->
   <div class = "item pieTime">
     <a href = "">
       <img src = "Cakes/pumpkinPiiiie-removebg-preview.png" alt="Pumpkin Pie"
-      width = "330px">
+      width = "230px">
       <p>Pumpkin Pie</p>
 <p>£35.00</p>
     </a>
   </div> 
+ </div>
 </div>
   </content>
 
+  <br>
+  <br>
+  <!--Jenny's bakery book COME BACK TO THIS LATER ON-->
+  <!--Give it a read more and buy now button and it to a shopping cart-->
+  <div class="container-md"> 
+  <div id = "cookBook">
+<p class = "newsIntroduction"> 
+Jenny's <span id = "news">News</span>
+</p>
+
+<p class = "newsletter">
+<b>JENNY'S BAKERY: THE ULTIMATE COOKBOOK – REVISED & IMPROVED</b>
+</p>
   
+
+ 
+    <div class = cookbookImage> 
+    <img class = "" src = "Cakes/Baking Bestsellers pictures/cookbook/DoneWithCookBook.jpg">
+<!--width="390px"-->
+  </div>
+<br>
+
+<p class = cookBookText>The number one baking bestseller is back! The Jenny's Bakery Cookbook 
+  <br>
+  has been revised and expanded with eight irresistible new recipes, including
+  <br>
+  the bakery’s fast-selling Mile High Chocolate Salted Caramel Cake.
+  </p>
+  </div>
+
   
+  <div class = "newsletterButtons">
+    <button class = "readMore">Read More</button>
+  <button class = "buyNow">Buy Now</button>
+  </div>
+  </div>
+
+<br>
+<br>
+  <div class="container-md">
+    <!--Introduction--> 
+  <p class = "mailinglistIntro">Love <span id = "mailinglistDesign">
+    Baking?
+    <br>
+  </span> Get A Slice Of The Action!</p>
+
+  <p class = "mailinglistInfo">
+    <b>Join our mailing list for the latest baking news, updates, 
+    <br>
+    competitions and more.</b></p>
+
+    <b> 
+    <p>By entering your email address here you understand and  
+      <br>
+      agree that Jenny's Bakery Limited may use your personal  
+      <br>
+     data in accordance with our data <a href = ""> Privacy Policy</a>.
+    </p>
+      </b>
+      
+      <input type='text' name='mailing_list' value='First Name...' id='firstName'>
+      <label for='firstName'></label>
+
+      <input type='text' name='mailing_list' value='Email Address...' id='emailLabel'>
+      <label for='emailLabel'></label>
+      <button class = "mailingSubmitButton">Submit</button>
+  </div>
+
+  <br>
+  <footer>
+
+  </footer>
   <!--JavaScript with Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
