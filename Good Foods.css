@@ -98,4 +98,58 @@ font-weight:bold;
     font-size:large;
 }
 
+.locationTitle {
+    font-family: "great vibes";
+    font-size: 50px;
+}
 
+/* competition content */
+
+/*Rotate the word winner*/
+
+
+
+.competitionIntro {
+    font-family: "great vibes";
+    font-size: 50px;
+}
+
+#introductionColor {
+ color:#ff1493;
+}
+
+.basqueCakeImage {
+    width:400px;
+}
+
+.victoriaCakeInstagram {
+    width:400px;
+}
+
+.paginationContainer {
+    position:relative;
+    left: 50%;
+}
+
+/*Pagination*/
+.pagination_buttons {
+    border-radius: 4px;
+    transition-duration: 0.6s;
+    text-align:center;
+    width: 90px;
+    font-weight: bold;
+}
+
+
+.pagination_buttons:hover {
+background-color:pink;
+color: #ff1493;
+border-color: pink;
+}
+
+
+/*
+.paginationContent {
+    text-align:center;
+}
+*/
