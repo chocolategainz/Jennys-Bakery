@@ -42,7 +42,7 @@ console.log(multiply);
 
 /*Pagination*/
 /*Global Variables*/
-const currentPage = 1;
+let currentPage = 1;
 const itemsPerPage = 1;
 
 
@@ -55,30 +55,71 @@ const paginationData = [
     {image: 'competition content/Apricot & Rosemerry tart.png', name: 'Apricot & Rosemerry Tart', description: 'Congratulations Ann', date: 'Janurary 2023'},
 ];
 
-const content = document.getElementById('#paginationContent');
-const previous = document.querySelector('.previousButton');
-const next = document.querySelector('.nextButton');
-const pageNumbers = document.getElementById('#paginationNumbers');
 //The dynamicPages parameter represents the value of the current page. 
 function displayedPages (dynamicPages) {
     //Here we are assigning each calculation with the start and end of the array. 
-    const startIndex = (dynamicPages - 1) * itemsPerPage; 
-    const endIndex = startIndex + itemsPerPage;
-}
+    const index = (dynamicPages - 1); 
+if(index >= 0 && index <= paginationData.length) {
+    const data = paginationData[index];
+//We want to to reference our HTML ID called content
+const contentContainer = document.getElementById('content');
+//We are going to empty out our HTML container and also enable access to it
+contentContainer.innerHTML = '';
+
+/*
+//If the start index is less than the end of the index in our array then iterate the loop.
+for (i = startIndex; i <= endIndex; i++) {
+    //if the start index is greater or equal to our entire array then break the loop as soon as possible
+    if (startIndex >= paginationData.length) break;
+*/
+
+//We are assigning a new variable called item to our paginationData from the start of the index.
+
+/*We want to create a div and an image element. 
+Then we assign our data to the src image and alternative image. 
+Then we append our images element to our contaainer element making images a child of container*/
+let container = document.createElement('div');
+const image = document.createElement('img');
+image.src = data.image;
+container.appendChild(image);
+
+//Congratulation Description
+let competitionDescriptions = document.createElement('p');
+competitionDescriptions.textContent = data.description;
+container.appendChild(competitionDescriptions);
+
+//Cake Name.
+let competitionName = document.createElement('p');
+competitionName.textContent = data.name;
+competitionDescriptions.appendChild(competitionName);
+
+//Date
+let monthOfAward = document.createElement('p');
+monthOfAward.textContent = data.date;
+competitionName.appendChild(monthOfAward);
+
+
+
+
+contentContainer.appendChild(container);
+
+}; 
+ };
 
 /*Creating the pagination*/
 function paginationCreation () { 
 const pages = Math.ceil(paginationData.length / itemsPerPage);
 //Next we want to move our pagination to our empty pagination div
-const dynamicPagination = document.getElementById(paginationCreation);
+const dynamicPagination = document.getElementById('paginationMaker');
 //Use inner HTML and give it an empty id. This will allow me to pull HTML elements to JavaScript AND clear any content inside of it.
-//Content is already cleared so no need
-const paginationElement = dynamicPagination.innerHTML = ""; 
-};
+//This is a more clear way of clearing my element from any HTML element, 
+//and then assigning that element to the new variable called dynamicPagination
+dynamicPagination.innerHTML = '';
+
 
 //i is equal to currentPage (1), if the current page is less than or equal to 4 (the amount of items we ant displayed),
 // then loop and repeat each item until it reaches the condition
-for (const i = 1; i <= itemsPerPage; i++) {
+for (let i = 1; i <= pages; i++) {
 //Now we will add CSS properties to a newly created <a> element. This is because we want the pagination navigation bar
 //to have the same style upon each click.
 
@@ -89,16 +130,31 @@ attach.href = '#';
 //on the 3 button, the third layer of content will display in HTML.
 attach.innerHTML = i;
 //Here we are adding our css class and linking its components to our anchor element called attach.
-attach.classList.add('.pagination_buttons');
+attach.classList.add('pagination_buttons');
 
 
 //if our value is the same as the current page, then use our hover affect on each anchor element.
 if (i === currentPage) {
-    attach.classList.add('.pagination_buttons:hover');
+    attach.classList.add('pagination_buttons:hover');
 }
 
-}
+attach.addEventListener('click' , function (event) {
+    event.preventDefault();
+    //Here, we are retrieving our click event, and targetting our inner HTML element. We use parseInt to convert 
+    //our currentPage value (the current page number) into an interger just in case the value of currentPage is not a full number.
+    currentPage = parseInt(event.target.innerHTML);
+    displayedPages(currentPage);
+    paginationCreation();
+});
 
+
+
+dynamicPagination.appendChild(attach);
+}
+ }
+
+displayedPages(currentPage);
+paginationCreation();
 
 
 
