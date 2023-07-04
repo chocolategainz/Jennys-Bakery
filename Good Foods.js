@@ -53,18 +53,49 @@ const paginationData = [
     {image: 'competition content/carrot cake-Alice.png', name: 'Carrot Cake', description: 'Congratulations Alice', date: 'March 2023'},
     {image: 'competition content/white seasame chocolate cookies-lauren.png', name: 'White Seasane Chocolate Cookies', description: 'Congratulations Lauren', date: 'Feburary 2023'},
     {image: 'competition content/Apricot & Rosemerry tart.png', name: 'Apricot & Rosemerry Tart', description: 'Congratulations Ann', date: 'Janurary 2023'},
+    {image: 'competition content/Brownie Cake.png', name: 'Brownie Cake', description: 'Congratulations John', date: 'December 2022'},
+    {image: "competition content/rainbowCake.png", name: 'Rainbow Cake', description: 'Congratulations Katie', date: 'November 2022'},
+    {image: 'competition content/chocolate cake.png', name: 'Chocolate Cupcake', description: 'Congratulations Alice', date: 'October 2022'}
 ];
+
+
 
 //The dynamicPages parameter represents the value of the current page. 
 function displayedPages (dynamicPages) {
     //Here we are assigning each calculation with the start and end of the array. 
-    const index = (dynamicPages - 1); 
+    const index = (dynamicPages - 1); //current page
 if(index >= 0 && index <= paginationData.length) {
     const data = paginationData[index];
 //We want to to reference our HTML ID called content
 const contentContainer = document.getElementById('content');
 //We are going to empty out our HTML container and also enable access to it
 contentContainer.innerHTML = '';
+
+
+
+/*
+
+let previousPage = document.getElementById('backButton');
+previousPage.addEventListener('click' , function() {
+if (currentPage > 0) {
+    currentPage--;
+    displayedPages(currentPage);
+    paginationCreation();
+} 
+ });
+
+ let nextPage = document.getElementById('forwardButton');
+ nextPage.addEventListener('click' , function (){
+    if (currentPage < Math.ceil(paginationData.length / itemsPerPage)) {
+        currentPage++;
+        displayedPages(currentPage);
+        paginationCreation();
+        
+      }
+
+ });
+*/
+
 
 /*
 //If the start index is less than the end of the index in our array then iterate the loop.
@@ -98,11 +129,7 @@ let monthOfAward = document.createElement('p');
 monthOfAward.textContent = data.date;
 competitionName.appendChild(monthOfAward);
 
-
-
-
 contentContainer.appendChild(container);
-
 }; 
  };
 

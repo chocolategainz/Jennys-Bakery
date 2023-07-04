@@ -4,9 +4,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link rel="stylesheet" href="Good Foods.css">
+<!--Bebas Neue-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <head>
  <title>Good Foods</title> <!--Placeholder-->   
@@ -17,42 +18,36 @@
 
   <!--background color for header/menu-->
 <div id = "colorHeader">
-    <!--Container for header-->
-  <div class="container-fluid">
-
-  <div class="d-flex justify-content-evenly"> 
+    <!--Container for header--> 
+  
     <!--Title-->
-  <div class = "headerBar"> 
   <header>
+
 <!--Delivery Page GEO-location API(This will allow the user type their address information)-->
-
-
+<div class="d-flex justify-content-center">
    <!--Jenny's--> 
    <a href = "file:///C:/Users/User/Documents/Javascript%20March%202023/Bakery%20web%20app/Good%20Foods.html">
-<img src = "Jenny_s_Bakery_LOGO-removebg-preview.png" alt="logo"
-width = "300px">
+<img src = "Jenny_s_Bakery_LOGO-transformed-removebg-preview.png" id = "jennysBakeryLogo" alt="logo"
+width = "290px">
   </a>
+</div>
+
+<div class="position-relative"> 
+  <div class="position-absolute top-0 end-0"> 
+  
+    <div class="positionedMenu">
+    <!--search bar form-->
+<input type = "text" id = "searchBar" name = "searchBar">
+<button id = "submit">Search</button>
+  </div>
+  </div>
+</div>
 
 
-
-<!--shopping cart-->
-<!--Use AJAX to load the page dynamically without the user needing to reload the page-->
-<a href = ""> 
-<img src = "icons8-shopping-cart-60-removebg-preview.png" alt = "shopping_cart"
-width = 38px>
-</a>
-
-<!--log in/sign up button-->
-<a href = ""> 
-<img src = "icons8-person-64-removebg-preview.png" alt="icon"
-width="42px">
-</a>
-
-<!--Attach the modal to the image-->
-<!-- Button trigger modal for sign up/sign in -->
-<button type="button"
- class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+<!--log in/sign up bottom-->
+<!-- Button trigger modal -->
+<button type="button" id = "headerButtons" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Log in
 </button>
 
 <!-- Modal -->
@@ -72,16 +67,61 @@ width="42px">
       </div>
     </div>
   </div>
+ </div>
+
+<!--shopping cart-->
+<button type="button" id="headerButtons" class="btn btn-primary">Checkout</button>
+</header> 
 </div>
 
-<!--search bar form-->
-<input type = "text" id = "searchBar" name = "searchBar">
-<button id = "submit">search</button>
-</header>
-   </div>
+  
+
+<!--log in/sign up button
+<a href = ""> 
+<img src = "icons8-person-64-removebg-preview.png" alt="icon"
+width="42px">
+</a>
+-->
+
+
+<!--Use AJAX to load the page dynamically without the user needing to reload the page
+<a href = ""> 
+<img src = "icons8-shopping-cart-60-removebg-preview.png" alt = "shopping_cart"
+width = 38px>
+</a>
+-->
+
+
+
+
+<!--Attach the modal to the image-->
+<!-- Button trigger modal for sign up/sign in 
+<button type="button"
+ class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+Modal
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
   </div>
- </div>
 </div>
+-->
+
+
  
 
   <div class="containerFluidMenu">
@@ -96,7 +136,7 @@ width="42px">
 <li class = menuList><a href = "">Pies</a></li>
 <li class = "menuList"><a href = ""> Brownies & Cookies </a></li>
 <li class = "menuList"><a href = "">  Occassions </a></li>
-<li class = "menuList"><a href = ""> Corporate </a></li>
+<li class = "menuList"><a href = ""> Donuts </a></li>
 <li class = "menuList"><a href = ""> Gifts </a></li>
  
 </div>
@@ -113,7 +153,7 @@ width="42px">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      
     </div>
     
     <!--Video Slide-->
@@ -123,16 +163,11 @@ width="42px">
           <source src = "Cakes/Chocolate Cake With Chocolate Ganache Glaze (1).mp4" type = "video/mp4">
         </video>
       </div>
-      
-      <!--Image Slide-->
-      <div class="carousel-item">
-        <img class = "img-fluid w-100" src="Cakes/Guinness-Chocolate-Puddings-Recipe-Guinness-Chocolate-Pudding-Chocolate-Pudding-13 (BIGGER IMAGE).jpg" alt="Image">
-      </div>
    
 
    <!--Image Slide 2-->
    <div class="carousel-item">
-   <img class = "img-fluid w-100" src= "Cakes/Jenny's bakery better logo size.jpg" alt="bakery logo">
+   <img class = "img-fluid w-100" src= "Cakes/donutmadness-transformed-transformed.jpeg" alt="bakery logo">
  </div>
 </div>    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -148,9 +183,10 @@ width="42px">
   
   <!--Caption-->
 <br>
-  <div class = "captions">
-     <div><b>Authentic British Cakes & Desserts</b></div> 
-    <div id = "captionTwo">Baking the right cake to suit your every occassion</div>  
+ 
+    <!--  <div><b>Authentic British Cakes & Desserts</b></div> -->
+    <div class = "caption">Baking the right cake to suit your
+      <span id = "captionTitle">every occassion</span> 
     </div>
 
 
@@ -311,13 +347,18 @@ Jenny's <span id = "news">News</span>
   </div>
 <br>
 
-<p class = cookBookText>The number one baking bestseller is back! The Jenny's Bakery Cookbook 
+<p class = cookBookText>The number one baking bestseller is back! Jenny's Bakery: The Ultimate Cookbook 
   <br>
   has been revised and expanded with eight irresistible new recipes, including
   <br>
   the bakery’s fast-selling Mile High Chocolate Salted Caramel Cake.
   </p>
   </div>
+
+<!--Sneak Peek-->
+<!--Add desserts that would be in the cookbook. Ensure it has recipes and etc. Just like the other website with rotatated
+images(Sally's baking recipes)-->
+<p class = "">Take a look inside</p>
 
   <div class = "newsletterButtons">
     <button class = "readMore">Read More</button>
@@ -380,8 +421,8 @@ Date
   
   <div id="content"></div>
 
-  <button class = "pagination_buttons" id = "backButton">  Previous  </button>
-  <button class = "pagination_buttons" id = "forwardButton"> Next  </button>
+  <div class = "pagination_buttons" id = "backButton"></div>
+  <div class = "pagination_buttons" id = "forwardButton"></div>
 </div>
 
 <div id = "paginationMaker"></div>
@@ -395,11 +436,7 @@ Date
 <br>
   <div class="container-md">
     <!--Introduction--> 
-   <p class = "mailinglistIntro">Love <span id = "mailinglistDesign">
-    Baking?
-    <br>
-    
-  </span> Get A Slice Of The Action!</p>
+   <p class = "mailinglistIntro"> Get A Slice Of The Action!</p>
 
   <p class = "mailinglistInfo">
     <b>Join our mailing list for the latest baking news, updates, 
@@ -427,6 +464,7 @@ Date
   <footer>
 
   </footer>
+
   <!--JavaScript with Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
