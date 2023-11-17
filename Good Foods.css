@@ -214,7 +214,8 @@ border-color: #ff1493;
 .flipbox {
    width: 250px; 
     background-color: transparent;
-    perspective: 1000px; 
+   /* perspective: 3000px; */
+   perspective: 100%;
     display: inline-block;
 }
 
@@ -249,8 +250,8 @@ width:max-content;
 transform: rotateY(180deg);
 /*This will help position the backside of the image once it flips*/
 position: relative;
-right: 250px;
-top:180px;
+right: 200px;
+top:150px;
 }
 
 
@@ -258,8 +259,10 @@ top:180px;
 align-items: center;    
 background-color: #800000;
 transform: translate(-50%, -50%);
+height: 240px;
 color:whitesmoke;
 padding: 50px 50px;
+border-radius: 10px;
 }
 
 /*
@@ -274,7 +277,8 @@ color: whitesmoke;
 .flipbox_london {
     width: 250px; 
     background-color: transparent;
-    perspective: 1000px; 
+    perspective: 100%;
+    /*perspective: 1000px; */
     display: inline-block;
 }
 
@@ -309,8 +313,8 @@ transform: rotateY(0deg);
     transform: rotateY(180deg);
     /*This will help position the backside of the image once it flips*/
     position: relative;
-    right: 250px;
-    top:180px;
+    right: 152px;
+    top:145px;
     }
     
     .backOfCardTwo {
@@ -319,13 +323,15 @@ transform: rotateY(0deg);
     transform: translate(-50%, -50%);
     color:whitesmoke;
     padding: 50px 50px;
+    border-radius: 10px;
     }
 
     /*Liverpool*/
     .flipbox_liverpool {
         width: 250px; 
     background-color: transparent;
-    perspective: 1000px; 
+    perspective: 100%;
+   /* perspective: 1000px; */
     display: inline-block;
     }
 
@@ -355,12 +361,14 @@ transform: rotateY(0deg);
     }
 
     .flipbox_backThree {
-        width:max-content;
+        width:max-content; 
         transform: rotateY(180deg);
         /*This will help position the backside of the image once it flips*/
         position: relative;
-        right: 250px;
-        top:180px;
+        
+        right: 180px;
+        top:150px;
+        
         }
         
         .backOfCardThree {
@@ -368,14 +376,17 @@ transform: rotateY(0deg);
         background-color: #800000;
         transform: translate(-50%, -50%);
         color:whitesmoke;
-        padding: 50px 50px;
+       /* padding: 50px 50px; */
+       padding: 45px 50px;
+        border-radius: 10px;
         }
 
         /*Kent*/
         .flipbox_kent {
             width: 250px; 
         background-color: transparent;
-        perspective: 1000px; 
+        perspective: 100%;
+      /* perspective: 1000px; */
         display: inline-block;
         }
     
@@ -398,6 +409,7 @@ transform: rotateY(0deg);
             backface-visibility: hidden;
             width: 100%;
             height: 100%;
+            
         }
     
         .flipbox_frontFour {
@@ -405,18 +417,28 @@ transform: rotateY(0deg);
         }
     
         .flipbox_backFour {
-            width:max-content;
+           /* width:max-content; */
+           
             transform: rotateY(180deg);
             /*This will help position the backside of the image once it flips*/
             position: relative;
-            right: 250px;
-            top:180px;
+            right: 125px; 
+            top:145px;
+            /* right: 150px;
+            top:160px;*/
+            
             }
             
             .backOfCardFour {
-            align-items: center;    
+            align-items: center; 
+             width: 262px;  
+             height: 240px;
             background-color: #800000;
+            border-radius: 10px;
             transform: translate(-50%, -50%);
             color:whitesmoke;
-            padding: 50px 50px;
+            padding: 40px 50px; /*padding: 50px 50px; */
+           
             }  
+
+            
