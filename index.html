@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Cookies</h1>
+    <div id = "milkChocolateCookie"></div>
+
+<!--We need to use AJAX to request and recieve recipe and ingredient data for our website.
+Using a XMLHTTPREQUEST will specifically allow us to retrieve the recipe data we need.-->
+<script>
+    function loadDoc() {
+        const apiID = "73671cc0";
+        const apiKey = "7f34967630fc282af02ad0a0019838d3";
+
+        //Always start your endpoints with https://api.""
+        const recipeAPI = `https://api.edamam.com/search?q=soft+and+chewy+chocolate+chip+cookies&app_id=${apiID}&app_key=${apiKey}`;
+
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+           if (this.readyState == 4 && this.status == 200) {
+            //Here, we need to convert our XMLHttpRequest from a JSON.stringified document to a JSON.parse document.
+            //If NOT THEN THE ENTIRE PAGE WILL BE A STRING OF WORDS
+     const response = JSON.parse(this.responseText);
+const getRecipe = response.hits[3].recipe; //Why recipe?
+const recipeHtml = `
+                        <h2>${getRecipe.label}</h2>
+                        <img src="${getRecipe.image}" alt="${getRecipe.label}">
+                        <p>${getRecipe.ingredients}<p> 
+                    `;
+    document.getElementById("milkChocolateCookie").innerHTML= recipeHtml;
+}
+        };
+        xhttp.open("GET", recipeAPI,true);
+        xhttp.send();
+    }
+</script> 
+
+ <script>
+    //This opens the data when the page is loaded
+window.onload = function () {
+    loadDoc();
+};
+</script>
+
+
+</body>
+</html>
