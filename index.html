@@ -1,8 +1,121 @@
 <!DOCTYPE html>
 <html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="milkChocolateChipCookies.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <body>
-<h1>Cookies</h1>
-    <div id = "milkChocolateCookie"></div>
+
+   
+
+   <div id = "colorHeader">
+    <header>
+    <!--Delivery Page GEO-location API(This will allow the user type their address information)-->
+    <div class="d-flex justify-content-center">
+       <!--Jenny's--> 
+       <a href = "file:///C:/Users/User/Documents/Javascript%20March%202023/Bakery%20web%20app/Good%20Foods.html">
+    <img src = "Jenny_s_Bakery_LOGO-removebg-preview.png" id = "jennysBakeryLogo" alt="logo"
+    width = "290px">
+      </a>
+    </div>
+    
+    <div class="position-relative"> 
+      <div class="position-absolute top-0 end-0"> 
+      
+        <div class="positionedMenu">
+        <!--search bar form-->
+    <input type = "text" id = "searchBar" name = "searchBar">
+    <button id = "submit">Search</button>
+      </div>
+      </div>
+    </div>
+    
+    
+    <!--log in/sign up bottom-->
+    <!-- Button trigger modal -->
+    <button type="button" id = "headerButtons" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Log in
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+    
+    <!--Form-->
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+        placeholder="Please enter your email address">
+        
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1"
+        placeholder="Please enter your password">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        <p class = "formThemeColorFont">
+        <a href = "" class = "formLabelLink">Forgot Password?</a>
+        </p>
+      </div>
+      <button type="submit" class="btn btn-primary">Log in</button>
+      <br>
+      <p>Don't have an account? 
+        <span class = "formThemeColorFont">
+     <a href = "" class = "formLabelLink">Register</a>
+      </span>
+      </p>
+    </form>
+          </div>
+    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+     </div>
+    
+    <!--shopping cart-->
+    <button type="button" id="headerButtons" class="btn btn-primary">Checkout</button>
+    
+    </div>
+    
+    <div class="containerFluidMenu">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-evenly">     
+                 
+        <!--Navigation bar-->
+      <li class = menuList> <a href = "">Cakes</a></li>
+      <li class = menuList><a href = ""> Cupcakes</a></li>
+      <li class = menuList><a href = "">Pies</a></li>
+      <li class = "menuList"><a href = "Brownies_Cookies.html"> Brownies & Cookies </a></li> <!--The link is broken-->
+      <li class = "menuList"><a href = "">  Occassions </a></li>
+      <li class = "menuList"><a href = ""> Donuts </a></li>
+      <li class = "menuList"><a href = ""> Gifts </a></li> 
+      </div>
+       </div>
+        </div>
+         </div>
+</header> 
+
+
+
+<div id = "milkChocolateCookie"></div> 
+
+</body>
+
 
 <!--We need to use AJAX to request and recieve recipe and ingredient data for our website.
 Using a XMLHTTPREQUEST will specifically allow us to retrieve the recipe data we need.-->
@@ -20,15 +133,27 @@ Using a XMLHTTPREQUEST will specifically allow us to retrieve the recipe data we
             //Here, we need to convert our XMLHttpRequest from a JSON.stringified document to a JSON.parse document.
             //If NOT THEN THE ENTIRE PAGE WILL BE A STRING OF WORDS
      const response = JSON.parse(this.responseText);
-const getRecipe = response.hits[3].recipe; //Why recipe?
+
+     if (response.hits.length > 1) { 
+     const secondRecipe = response.hits[1].recipe; //Why recipe?
+//Displays ingredients
+const cookieIngredients = secondRecipe.ingredients.map(ingredient => `<li>${ingredient.text}</li>`).join('');
 const recipeHtml = `
-                        <h2>${getRecipe.label}</h2>
-                        <img src="${getRecipe.image}" alt="${getRecipe.label}">
-                        <p>${getRecipe.ingredients}<p> 
+
+
+                        <h2>${secondRecipe.label}</h2>
+                        <img src="${secondRecipe.image}" alt="${secondRecipe.label}">
+                        <h3>Ingredients:</h3>
+                        <ul>${cookieIngredients}</ul> 
+                           
+                       
                     `;
     document.getElementById("milkChocolateCookie").innerHTML= recipeHtml;
-}
-        };
+} else {
+    document.getElementById("milkChocolateCookie").innerHTML = "No recipes found.";
+   }
+  }
+};
         xhttp.open("GET", recipeAPI,true);
         xhttp.send();
     }
@@ -41,6 +166,6 @@ window.onload = function () {
 };
 </script>
 
-
-</body>
+   <!--JavaScript with Bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
