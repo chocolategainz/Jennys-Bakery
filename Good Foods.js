@@ -183,9 +183,25 @@ dynamicPagination.appendChild(attach);
 displayedPages(currentPage);
 paginationCreation();
 
+//This is an example of a reusable function!
+function getWords(str) {
+    const words = str.split(' ');
+    return words; 
+    
+ }
+ function createSentence(words) {
+    const sentence = words.join('');
+    return sentence;
+   
+ }
 
+ const inputString = "Twentyfour Twentysix Twentyeight Thirty";
+ const words = getWords(inputString);
+ const sentence = createSentence(words);
 
-
+ console.log(words);
+ console.log(sentence);
+ 
 
 
 
