@@ -16,31 +16,42 @@ const apiEndpoint = 'https://spoonacular.com/recipes/yoghurt-honey-madeleines-66
 const apiKey = 'dbc76097489441f7b1ecf57258e459eb';
 
 const recipeAPI = `https://api.spoonacular.com/recipes/${apiID}/information?apiKey=${apiKey}`;
-
+/*
+The api key, ID, and endpoints are part of the Spoonacular API credentials, so that the user can have access to 
+specific content that I provide from their website.
+*/
 const ingredients = 'Yoghurt Honey Madeleines';
-
-    const numberOfRecipes = 1;
+const numberOfRecipes = 1;
+    /* 
+    This grabs the first list of recipes from 'Yoghurt Honey Madeleines'.
+    */
 
     const loadDoc = () => {
-
     
-    //This is a promise. 
-    fetch(recipeAPI) 
-    .then(response => {
-        if(!response.ok) {
+    fetch(recipeAPI) //This is a promise. Axios. This will allow me to make a fetch request regarding the pulling of data from their website.
+    //The fetch API uses a GET request to retrieve specific data. This is narrowed down by using its API ID and my unique apiKey.
+    .then(response => { 
+        if(!response.ok) { //It promises to get data from the Spoonacular API, if it cannot, it instead gives an error.
             throw new Error(`HTTP Error Status: ${response.status}`);
         }
-        return response.json();
+        return response.json(); //If it gives an error, it will try to fulfill its promise again and automatically parses the data using JSON.
     })
-    .then(data => {
+    .then(data => { //The promise continues further with this new parsed data, and checks to see if the API data is valid
         if (data) {
                         const cookieIngredients = data.extendedIngredients.map(ingredient => `<li>${ingredient.original}</li>`).join('');
+//The data object contains relevant information from the Spoonacular API.
+//The array property called extendedIngredients essentially contains information of the ingredients from the Spoonacular API.
+// The map function is called on the extendedIngredients array. In the array it contains the original text of each ingredient. 
+//The function applies the HTML list of ingredients and their original text and loops it for each ingredient in the array.
+//The join object caconates all of our HTML list items together as a string. The HTML list items are the original text of ingredients found from the Spoonacular API for Yoghurt Honey Madelines.
 
+//If the data is valid then it will create content within the HTML document. That content is stored under the variable 'recipeHTML'.
                         const recipeHtml = `
                             <h2>${data.title}</h2>
                             <img src="${data.image}" alt="${data.title}">
                             <h3>Ingredients:</h3>
                             <ul>${cookieIngredients}</ul> 
+                            <ul>${data.instructions}<ul>
                         `;
 
                         document.getElementById("honeyMadeleines").innerHTML = recipeHtml;
@@ -50,13 +61,14 @@ const ingredients = 'Yoghurt Honey Madeleines';
         //Handle data
         console.log(data);
     }) 
-    .catch(error => {
+    .catch(error => { //The catch method is used to handle errors on the occasion that the promise cannot be met
         console.error('Fetch error:', error);
     });
 
  }
 
- window.onload = function () {
+ window.onload = function () { //The onload function allows the data from the api to be printed onto the webpage without
+    //the need to refreh the page.
             loadDoc();
         };
 
