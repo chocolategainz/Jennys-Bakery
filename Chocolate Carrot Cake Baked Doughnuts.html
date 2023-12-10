@@ -39,7 +39,8 @@ const ingredients = 'Chocolate Carrot Cake Baked Doughnuts';
                             <h2>${data.title}</h2>
                             <img src="${data.image}" alt="${data.title}">
                             <h3>Ingredients:</h3>
-                            <ul>${cookieIngredients}</ul> 
+                            <ul>${cookieIngredients}</ul>
+                            <ul>${data.instructions}<ul> 
                         `;
 
                         document.getElementById("carrot").innerHTML = recipeHtml;
