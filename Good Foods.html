@@ -261,11 +261,14 @@ filter category-->
   <!--Container-->
   <div class = "cakeBoxModel"> 
     <!--items-->
-    <div class = "cakeItems">
+  <!--Tuxedo Cake-->
+  <div class = "cakeItems">
   <div class = "item bigCakes"> 
     <a href = "">
-  <img class = "" src = "cake menu/Tuxedo_Cake-removebg-preview.png" alt = "Tuxedo Cake" width="200px">
-  <p>Applesauce Cake</p>
+      <img src="cake menu/Tuxedo_Cake-removebg-preview.png" class="img-fluid" alt="tuxedo cake" >
+      <!--<img class = "" src = "cake menu/Tuxedo_Cake-removebg-preview.png" alt = "Tuxedo Cake" width="200px"> -->
+   
+  <p>Tuxedo Cake</p>
   </a>
    </div>
   </div>
@@ -274,7 +277,8 @@ filter category-->
   <div class = "item bigCakes">
     <div class = "cakeItems"> 
     <a href = "">
-      <img src = "cake menu/Red-Velvet-Cake-Square-YES.png" alt="Red Velvet Cake" width = 194px>
+      <img src="cake menu/Red-Velvet-Cake-Square-YES.png" class="img-fluid" alt="red velvet cake"> 
+      <!--<img src = "cake menu/Red-Velvet-Cake-Square-YES.png" alt="Red Velvet Cake" width = 194px>-->
       <p>Red Velvet Cake</p>
     </a>
    </div>
@@ -284,7 +288,8 @@ filter category-->
   <div class = "item bigCakes">
     <div class = "cakeItems"> 
     <a href = "">
-      <img src = "cake menu/lemonrasberryremovalbackhround-removebg-preview.png" alt="Rasberry lemon cake" width = 210>
+      <img src="cake menu/lemonrasberryremovalbackhround-removebg-preview.png" class="img-fluid" alt="rasberry lemon cake">
+      <!-- <img src = "cake menu/lemonrasberryremovalbackhround-removebg-preview.png" alt="Rasberry lemon cake" width = 210>-->
       <div>Rasberry Lemon Cake</div>
     </a>
     </div>
@@ -495,17 +500,23 @@ Date
   <br>
   <!--Title-->
   <p>Check out our stores</p>
+ <div class="d-flex justify-content-around"> 
 
-  <div class="d-flex justify-content-around"> 
- 
-  <div class = 'flipbox'>
+  <!--Responsiveness-->
+  <div class = 'container'> 
+<div class = 'row'>
+  <div class = 'col-12 col-md-6 col-lg-3'>
+    <!--Card One - Manchester-->
+<div class = 'flipbox'>
     <div class = "flipbox_inner">
       <div class = "flipbox_front">
-      <!--Manchester-->
+     
+        <!--Manchester-->
     <h2 class = "ManCity">Manchester</h2> 
    <img src="joe-cleary-sIcAcPOgpMU-unsplash.jpg" width = "280px" class="rounded" alt="Manchester City Center">  
   </div>
- <!--Back of card-->
+
+ <!--Back of card- Manchester-->
 <div class = "flipbox_back">
  <div class = "backText"> 
   <h6><b>Jenny's Bakery Manchester</b></h6>
@@ -516,8 +527,14 @@ Date
    </div>  
   </div>
      </div>
-  
-<!--London-->
+  </div>
+
+
+ 
+ 
+   
+      <div class = 'col-12 col-md-6 col-lg-3'>
+<!--Card Two - London-->
 <!--Front of card Two-->
 <div class = 'flipbox_london'>
   <div class = 'flipbox_innerTwo'>
@@ -536,8 +553,12 @@ Date
   </div>
 </div>
 </div>  
+      </div>
+  
 
-<!--Liverpool-->
+    
+      <div class = 'col-12 col-md-6 col-lg-3'>
+<!--Card Three - Liverpool-->
 <div class = "flipbox_liverpool">
   <div class = "flipbox_innerThree">
     <div class = 'flipbox_frontThree'>
@@ -556,9 +577,12 @@ Date
     </div>
   </div>
 </div>
+      </div>
     
   
-  <!--kent-->
+   
+      <div class = 'col-12 col-md-6 col-lg-3'>
+  <!--Card Four - kent-->
   <div class = 'flipbox_kent'>
     <div class = 'flipbox_innerFour'>
       <div class = 'flipbox_frontFour'>
@@ -578,10 +602,17 @@ Date
       </div>
     </div>
   </div>
+      </div>
+      
+      
+   
   
-</div>  
+</div>
 
-  <br>
+<!--responsiveness end div--> 
+</div> 
+ 
+ <br>
   <footer>
 
   </footer>
