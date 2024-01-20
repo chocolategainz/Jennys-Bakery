@@ -298,6 +298,15 @@ border-color: #ff1493;
 }
 
 /*Manchester*/
+
+#ManCity {
+    position:relative;
+    top: 120px;
+    left: 14px;
+    color:whitesmoke;
+}
+
+
 .flipbox {
    width: 250px; 
     background-color: transparent;
@@ -363,6 +372,14 @@ color: whitesmoke;
 
 
 /*London*/
+
+#London {
+    position:relative;
+    top: 120px; 
+    left: 16px;
+    color:whitesmoke;
+}
+
 .flipbox_london {
     width: 250px; 
     background-color: transparent;
@@ -416,6 +433,13 @@ transform: rotateY(0deg);
     }
 
     /*Liverpool*/
+
+    #Liverpool {
+        position:relative;
+        top: 120px; 
+        color:whitesmoke;
+    }
+
     .flipbox_liverpool {
         width: 250px; 
     background-color: transparent;
