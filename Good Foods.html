@@ -32,77 +32,6 @@ width = "290px">
   </a>
 </div>
 
-<div class="position-relative"> 
-  <div class="position-absolute top-0 end-0"> 
-  
-    <div class="positionedMenu">
-    <!--search bar form-->
-<input type = "text" id = "searchBar" name = "searchBar">
-<button id = "submit">Search</button>
-  </div>
-  </div>
-</div>
-
-
-<!--log in/sign up bottom-->
-<!-- Button trigger modal -->
-<button type="button" id = "headerButtons" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Log in
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-<!--Form-->
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
-    placeholder="Please enter your email address">
-    
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"
-    placeholder="Please enter your password">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-    <p class = "formThemeColorFont">
-    <a href = "" class = "formLabelLink">Forgot Password?</a>
-    </p>
-  </div>
-  <button type="submit" class="btn btn-primary">Log in</button>
-  <br>
-  <p>Don't have an account? 
-    <span class = "formThemeColorFont">
- <a href = "" class = "formLabelLink">Register</a>
-  </span>
-  </p>
-</form>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
- </div>
-
-<!--shopping cart-->
-<button type="button" id="headerButtons" class="btn btn-primary">Checkout</button>
-</header> 
-</div>
-
   
 
 <!--log in/sign up button
@@ -258,16 +187,17 @@ filter category-->
 
 <!--Each div represents an item that can be filtered. Give each item a common class-->
 <div class = "filteredItems"> 
+  
   <!--Container-->
   <div class = "cakeBoxModel"> 
+   
     <!--items-->
   <!--Tuxedo Cake-->
   <div class = "cakeItems">
   <div class = "item bigCakes"> 
     <a href = "">
-      <img src="cake menu/Tuxedo_Cake-removebg-preview.png" class="img-fluid" alt="tuxedo cake" >
+      <img src="cake menu/Tuxedo_Cake-removebg-preview.png" class="img-fluid" alt="tuxedo cake" width = '200px' class = 'cakeResponsiveness'>
       <!--<img class = "" src = "cake menu/Tuxedo_Cake-removebg-preview.png" alt = "Tuxedo Cake" width="200px"> -->
-   
   <p>Tuxedo Cake</p>
   </a>
    </div>
@@ -277,7 +207,7 @@ filter category-->
   <div class = "item bigCakes">
     <div class = "cakeItems"> 
     <a href = "">
-      <img src="cake menu/Red-Velvet-Cake-Square-YES.png" class="img-fluid" alt="red velvet cake"> 
+      <img src="cake menu/Red-Velvet-Cake-Square-YES.png" class="img-fluid"  alt="red velvet cake" width = '194px' class = 'cakeResponsiveness'> 
       <!--<img src = "cake menu/Red-Velvet-Cake-Square-YES.png" alt="Red Velvet Cake" width = 194px>-->
       <p>Red Velvet Cake</p>
     </a>
@@ -288,7 +218,7 @@ filter category-->
   <div class = "item bigCakes">
     <div class = "cakeItems"> 
     <a href = "">
-      <img src="cake menu/lemonrasberryremovalbackhround-removebg-preview.png" class="img-fluid" alt="rasberry lemon cake">
+      <img src="cake menu/blueberry_cheesecake-removebg-preview.png" class="img-fluid" alt="Blueberry Cheesecake" width = '194px' class = 'cakeResponsiveness'>
       <!-- <img src = "cake menu/lemonrasberryremovalbackhround-removebg-preview.png" alt="Rasberry lemon cake" width = 210>-->
       <div>Rasberry Lemon Cake</div>
     </a>
@@ -416,8 +346,10 @@ images(Sally's baking recipes)-->
 <!--Title-->  
 <p class = "competitionIntro">Love <span id = "introductionColor">Baking?</span></p>
 <button class = "instagramAccount">
-  Follow us on Instagram
+  
+  <a href = 'https://www.instagram.com/jennysbakery1090/?hl=en'>Follow us on Instagram</a>
 </button>
+
 <!--competition words-->
 <p>Become our baker of the month and recieve a shout out from Jenny's bakery</p>
 
@@ -464,7 +396,7 @@ Date
 
 <div id = "paginationMaker"></div>
 
-<!--subscribe notice-->
+<!--subscribe notice
 <p>Subscribe to our mailing list to find out more!</p>
 
 
@@ -472,7 +404,7 @@ Date
 <br>
 <br>
   <div class="container-md">
-    <!--Introduction--> 
+    Introduction
    <p class = "mailinglistIntro"> Get A Slice Of The Action!</p>
 
   <p class = "mailinglistInfo">
@@ -496,7 +428,7 @@ Date
       <label for='emailLabel'></label>
       <button class = "mailingSubmitButton">Submit</button>
   </div>
-
+-->
   <br>
   <!--Title-->
   <p>Check out our stores</p>
