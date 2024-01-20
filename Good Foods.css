@@ -74,7 +74,7 @@ a {
 
 #bestSellingCakes {
     font-family:'Bebas Neue', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     padding-left:10px;
     color:#ff1493;
 }
@@ -163,7 +163,7 @@ margin-right: 50px;
 
 
 .newsIntroduction {
-    font-size: 60px;
+    font-size: 70px;
     font-family:'Bebas Neue', sans-serif;
     
 }
@@ -174,6 +174,22 @@ margin-right: 50px;
 
 .cookBookText {
 font-weight:bold;
+/*
+margin-left: 200px;
+color:black;
+*/
+
+}
+
+#cookbookReleaseNews {
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+
+.newsletter {
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 44px;
+    color:black
 }
 
 /*Mailing Newsletter to users*/
@@ -204,11 +220,23 @@ font-weight:bold;
 .competitionIntro {
     font-family:'Bebas Neue', sans-serif;
     /*font-family: "great vibes";*/
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #introductionColor {
  color:#ff1493;
+}
+
+.competitionReward {
+    font-family:'Bebas Neue', sans-serif;
+    /*font-family: "great vibes";*/
+    font-size: 50px;
+    text-align:center;
+    color:black;
+}
+
+#designForByline {
+    color:#ff1493;
 }
 
 .basqueCakeImage {
@@ -262,8 +290,14 @@ border-color: #ff1493;
 }
 */
 
+.titleForLocations {
+    font-size: 70px;
+    font-family:'Bebas Neue', sans-serif;
+   color:black;
+   padding-left: 13px;
+}
 
-
+/*Manchester*/
 .flipbox {
    width: 250px; 
     background-color: transparent;
@@ -420,7 +454,6 @@ transform: rotateY(0deg);
         transform: rotateY(180deg);
         /*This will help position the backside of the image once it flips*/
         position: relative;
-        
         right: 180px;
         top:150px;
         
@@ -436,64 +469,6 @@ transform: rotateY(0deg);
         border-radius: 10px;
         }
 
-        /*Kent*/
-        .flipbox_kent {
-            width: 250px; 
-        background-color: transparent;
-        perspective: 100%;
-      /* perspective: 1000px; */
-        display: inline-block;
-        }
-    
-        .flipbox_innerFour {
-            position: relative;
-            text-align: center; 
-            width: 100%;
-            height: 100%;
-           transform-style: preserve-3d;  
-          transition: transform 0.8s;
-          transform: rotateY(0deg);
-        }
-    
-        .flipbox_kent:hover .flipbox_innerFour {
-            transform: rotateY(180deg);
-        }
-    
-        .flipbox_frontFour, .flipbox_backFour {
-            position:absolute; /*Change Next Time*/
-            backface-visibility: hidden;
-            width: 100%;
-            height: 100%;
-            
-        }
-    
-        .flipbox_frontFour {
-            transform: rotateY(0deg);
-        }
-    
-        .flipbox_backFour {
-           /* width:max-content; */
-           
-            transform: rotateY(180deg);
-            /*This will help position the backside of the image once it flips*/
-            position: relative;
-            right: 125px; 
-            top:145px;
-            /* right: 150px;
-            top:160px;*/
-            
-            }
-            
-            .backOfCardFour {
-            align-items: center; 
-             width: 262px;  
-             height: 240px;
-            background-color: #800000;
-            border-radius: 10px;
-            transform: translate(-50%, -50%);
-            color:whitesmoke;
-            padding: 40px 50px; /*padding: 50px 50px; */
-           
-            }  
+        
 
           
