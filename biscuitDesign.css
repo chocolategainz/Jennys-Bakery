@@ -43,10 +43,19 @@ a {
     text-decoration: none;
    /* color:#e52b50; */
    color:#800000;
+   font-weight:550;
 }
 
 #biscuitTitle {
-    font-family: 'Bebas Neue' , 'sans-serif';
-    font-size: 60px;
-    color:#800000;
+    font-family: 'Bebas Neue' , sans-serif;
+    color: #ff1493;
+    font-size: 80px;
+    text-align: center;
+}
+
+.biscuitCaption {
+    text-align:center;
+    color: #800000;
+    font-weight:550;
+    font-size:large;
 }

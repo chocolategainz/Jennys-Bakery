@@ -37,4 +37,19 @@ a {
     text-decoration: none;
    /* color:#e52b50; */
    color:#800000;
+   font-weight: 550;
+}
+
+#cupcakeTitle {
+    font-family: 'Bebas Neue' , sans-serif;
+    color: #ff1493;
+    font-size: 80px;
+    text-align: center;
+}
+
+.cupcakeCaption {
+    text-align:center;
+    color: #800000;
+    font-weight:550;
+    font-size:large;
 }

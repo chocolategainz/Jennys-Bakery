@@ -38,28 +38,29 @@ a {
     text-decoration: none;
    /* color:#e52b50; */
    color:#800000;
+   font-weight:550;
 }
 
 /*Brownies and Cookies Title*/
 #cookieTitle {
     text-align: center;
         font-family:'Bebas Neue', sans-serif;
-        font-size: 50px;
+        font-size: 80px;
         color:#ff1493;
     }
     
     #browniesTitle {
         text-align: center;
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 50px;
+        font-size: 80px;
         color:black;
     }
 
     .brownies_CookiesCaption {
-        text-align: center;
-        font-weight: bold;
+        text-align:center;
+        color: #800000;
+        font-weight:550;
         font-size:large;
-        color:#800000;
     }
 
 
