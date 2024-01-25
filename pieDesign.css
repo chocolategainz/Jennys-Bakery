@@ -37,15 +37,19 @@ a {
     text-decoration: none;
    /* color:#e52b50; */
    color:#800000;
+   font-weight: 550;
 }
 
 #piesTitle {
     font-family: 'Bebas Neue' , sans-serif;
-    color: #800000;
-    font-size: 64px;
+    color: #ff1493;
+    font-size: 80px;
     text-align: center;
 }
 
 .piesCaption {
     text-align:center;
+    color: #800000;
+    font-weight:550;
+    font-size:large;
 }
