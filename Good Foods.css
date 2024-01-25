@@ -106,6 +106,7 @@ span {
 /*Spaces out all of the bigger cakes evenly and within a center*/
 .bigCakes {
 margin-right: 50px;
+font-weight:550;
 }
 
 .cakeResponsiveness {
@@ -128,6 +129,8 @@ margin-right: 50px;
 
 .cupcakeItems {
     padding: 10px;
+    text-align:center;
+    font-weight:550;
 }
 
 .cupcakeResponsiveness {
@@ -151,6 +154,7 @@ margin-right: 50px;
 /*Creates 10 pixels of space between each image*/
 .pieItem {
     padding:10px;
+    font-weight:550;
 }
 
 /*Makes the images responsive*/
@@ -165,7 +169,6 @@ margin-right: 50px;
 .newsIntroduction {
     font-size: 70px;
     font-family:'Bebas Neue', sans-serif;
-    
 }
 
 #news {
@@ -173,17 +176,18 @@ margin-right: 50px;
 }
 
 .cookBookText {
-font-weight:bold;
+font-weight:560;
 /*
 margin-left: 200px;
-color:black;
 */
-
+color:#800000;
+font-size:large;
 }
 
 #cookbookReleaseNews {
     font-family:'Bebas Neue', sans-serif;
     font-size: 50px;
+    color:black;
 }
 
 .newsletter {
