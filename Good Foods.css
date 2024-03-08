@@ -1,15 +1,29 @@
+
+/*Mobile Phone responsiveness*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    /*For Tablets*/
+    body {
+        width: 100%;
+      }
+  }
+
+
 body {
-    max-width: 100%;
+    max-width: none;
     background-color: pink;  
 }
 
-/*
-@media(max-width:1024px) {
-body {
-    margin: 24px;
+.containerFrame {
+   width: auto;
 }
-}
-*/
+
 .positionedMenu {
    position:relative;
    bottom: 84px;
@@ -169,6 +183,7 @@ font-weight:550;
 .newsIntroduction {
     font-size: 70px;
     font-family:'Bebas Neue', sans-serif;
+    color:black;
 }
 
 #news {
@@ -182,6 +197,14 @@ margin-left: 200px;
 */
 color:#800000;
 font-size:large;
+text-align: center;
+}
+
+.cookbookImage {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
 }
 
 #cookbookReleaseNews {
@@ -225,6 +248,7 @@ font-size:large;
     font-family:'Bebas Neue', sans-serif;
     /*font-family: "great vibes";*/
     font-size: 70px;
+    color:black;
 }
 
 #introductionColor {
