@@ -1,27 +1,26 @@
 
 /*Mobile Phone responsiveness*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) { /*480px or lower*/
     /* For mobile phones: */
     body {
       width: 100%;
     }
   }
 
-  @media only screen and (max-width: 1024px) {
-    /*For Tablets*/
+  @media only screen and (max-width: 768px) { /*768px or lower*/
+    /* For Tablets: */
     body {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
 
 body {
-    max-width: none;
     background-color: pink;  
 }
 
 .containerFrame {
-   width: auto;
+   max-width: auto;
 }
 
 .positionedMenu {
