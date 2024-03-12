@@ -48,9 +48,9 @@ const itemsPerPage = 1;
 
 //I am using an array of objects to store and define multiple elements under the same delaration for refrencing and iteration
 const paginationData = [
-    {image: '/submissions for competition/Basque Cake.png', name: 'Basque Cake', description:'Congratulations Caitlin', date: 'May 2023'},
-    {image: '/submissions for competition/Victoria Spongecake.png', name: 'Victoria Spongecake', description: 'Congratulations Ben', date: 'April 2023'},
-    {image: '/submissions for competition/carrot cake-Alice.png', name: 'Carrot Cake', description: 'Congratulations Alice', date: 'March 2023'},
+    {image: 'submissions for competition/Basque Cake.png', name: 'Basque Cake', description:'Congratulations Caitlin', date: 'May 2023'},
+    {image: 'submissions for competition/Victoria Spongecake.png', name: 'Victoria Spongecake', description: 'Congratulations Ben', date: 'April 2023'},
+    {image: 'submissions for competition/carrot cake-Alice.png', name: 'Carrot Cake', description: 'Congratulations Alice', date: 'March 2023'},
     {image: 'submissions for competitiont/white seasame chocolate cookies-lauren.png', name: 'White Seasane Chocolate Cookies', description: 'Congratulations Lauren', date: 'Feburary 2023'},
     {image: 'submissions for competition/Apricot & Rosemerry tart.png', name: 'Apricot & Rosemerry Tart', description: 'Congratulations Ann', date: 'Janurary 2023'},
     {image: 'submissions for competition/Brownie Cake.png', name: 'Brownie Cake', description: 'Congratulations John', date: 'December 2022'},
