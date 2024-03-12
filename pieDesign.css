@@ -3,6 +3,21 @@ body {
     max-height: 100%;
     background-color: pink;  
 }
+
+/*Mobile Phone responsiveness*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    /*For Tablets*/
+    body {
+        width: 100%;
+      }
+  }
 /*
 .container {
     margin-top: 10px; 
