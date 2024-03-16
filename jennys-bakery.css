@@ -9,10 +9,10 @@
     }
   }
 
-  @media only screen and (min-width:481px) and (max-width: 768px) { /*between 481px to 768px*/
+  @media only screen and (min-width:481px) and (max-width: 1024px) { /*between 481px to 768px*/
     /* For Tablets: */
-    .containerFrame , html {
-      width: 100%;
+    .containerFrame {
+      width:100%;
       margin: 0;
       padding:0;
     }
