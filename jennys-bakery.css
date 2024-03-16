@@ -4,8 +4,6 @@
     /* For mobile phones: */
     .containerFrame , .containerFluidMenu , .container-md{
       width: 100%;
-      margin: 0;
-      padding:0;
     }
   }
 
@@ -13,8 +11,7 @@
     /* For mobile phones in landscape mode */
     .containerFrame , .containerFluidMenu , .container-md {
       width: 100%;
-      margin: 0;
-      padding: 0;
+      
     }
   }
 
