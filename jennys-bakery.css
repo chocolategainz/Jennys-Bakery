@@ -2,7 +2,7 @@
 /*Mobile Phone responsiveness*/
 @media only screen and (max-width: 480px) { /*480px or lower*/
     /* For mobile phones: */
-    .containerFrame {
+    .containerFrame , html{
       width: 100%;
       margin: 0;
       padding:0;
@@ -11,7 +11,7 @@
 
   @media only screen and (max-device-width: 480px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
-    .containerFrame {
+    .containerFrame , html {
       width: 100%;
       margin: 0;
       padding: 0;
