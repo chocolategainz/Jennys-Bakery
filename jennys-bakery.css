@@ -2,7 +2,7 @@
 /*Mobile Phone responsiveness*/
 @media only screen and (max-width: 868px) { /*480px or lower*/
     /* For mobile phones: */
-    .containerFrame , html{
+    .containerFrame , .containerFluidMenu , .container-md{
       width: 100%;
       margin: 0;
       padding:0;
@@ -11,7 +11,7 @@
 
   @media only screen and (min-device-width: 768px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
-    .containerFrame , html {
+    .containerFrame , .containerFluidMenu , .container-md {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -20,7 +20,7 @@
 
   @media only screen and (min-width:481px) and (max-width: 1240px) { /*between 481px to 768px*/
     /* For Tablets: */
-    .containerFrame {
+    .containerFrame , .containerFluidMenu , .container-md {
         width: 100%;
         margin: 0;
         padding:0;
