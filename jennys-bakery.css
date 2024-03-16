@@ -5,6 +5,7 @@
     .containerFrame {
       width: 100%;
       display:block;
+      text-align:center;
     }
   }
 
@@ -13,18 +14,20 @@
     .containerFrame {
       width: 100%;
       display:block;
+      text-align:center;
     }
   }
 
+  /*
   @media only screen and (min-width:481px) and (max-width: 1240px) { /*between 481px to 768px*/
-    /* For Tablets: */
+    /* For Tablets: 
     .containerFrame {
         width: 100%;
         display: block;
     }
   }
 
-
+*/
 body {
     background-color: pink;  
     
