@@ -1,0 +1,81 @@
+body {
+    background-color: pink;  
+}
+
+/*Mobile Phone responsiveness*/
+@media only screen and (max-width: 554px) and (orientation: portrait) { /*480px or lower*/
+    /* For mobile phones: */
+    .responsiveContainer {
+     width: 100%;   
+    }
+   
+  }
+
+  @media only screen and (min-width: 758px) and (orientation: landscape) {
+    /* For mobile phones in landscape mode */
+    .responsiveContainer {
+      width: 100%;   
+    }
+   
+  }
+
+.positionedMenu {
+   position:relative;
+   bottom: 84px;
+   right:50px;
+}
+
+#headerButtons {
+    position:relative;
+    left: 850px;
+    bottom: 87px;
+}
+
+#jennysBakeryLogo {
+    position:relative;
+    top: 20px;
+}
+
+.containerFluidMenu {
+    height: 50px;
+    background:hotpink;
+}
+
+.menuList {
+   list-style-type: none; 
+   padding-top:12px;
+   font-family: 'Bebas Neue' , sans-serif;
+   font-size:large;
+}
+
+
+a {
+    text-decoration: none;
+   /* color:#e52b50; */
+   color:#800000;
+   font-weight:550;
+}
+
+/*Brownies and Cookies Title*/
+#cookieTitle {
+    text-align: center;
+        font-family:'Bebas Neue', sans-serif;
+        font-size: 80px;
+        color:#ff1493;
+    }
+    
+    #browniesTitle {
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        color:black;
+    }
+
+    .brownies_CookiesCaption {
+        text-align:center;
+        color: #800000;
+        font-weight:550;
+        font-size:large;
+    }
+
+
