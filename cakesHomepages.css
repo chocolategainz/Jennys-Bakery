@@ -8,7 +8,9 @@ body {
     .responsiveContainer {
      width: 100%; 
     }
-   
+   .cakeHeader {
+    width: 100%;
+   }
   }
 
   @media only screen and (min-width: 758px) and (orientation: landscape) {
@@ -16,13 +18,10 @@ body {
     .responsiveContainer {
       width: 100%;
     }
-   
+   .cakeHeader {
+    width: 100%;
+   }
   }
-/*
-.container {
-    margin-top: 10px; 
-}
-*/
 
 #headerButtons {
     position:relative;
