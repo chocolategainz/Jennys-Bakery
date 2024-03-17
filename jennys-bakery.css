@@ -5,7 +5,7 @@
     .containerFrame {
      max-width: 100%; 
       display:flex;
-      text-align:center;
+      
     }
   }
 
@@ -14,7 +14,7 @@
     .containerFrame {
       width: 100%;
       display:flex;
-      text-align:center;
+      
     }
   }
 
