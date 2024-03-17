@@ -4,8 +4,7 @@
     /* For mobile phones: */
     .containerFrame {
      width: 100%; 
-      display:inline-block;
-    
+      
       
     }
    
@@ -15,7 +14,6 @@
     /* For mobile phones in landscape mode */
     .containerFrame {
       width: 100%;
-      display:inline-block;
      
       
     }
