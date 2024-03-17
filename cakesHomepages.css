@@ -8,7 +8,7 @@ body {
     .responsiveContainer {
      width: 100%; 
     }
-   .cakeHeader {
+   #cakePicture {
     width: 100%;
    }
   }
@@ -18,7 +18,7 @@ body {
     .responsiveContainer {
       width: 100%;
     }
-   .cakeHeader {
+   #cakePicture {
     width: 100%;
    }
   }
