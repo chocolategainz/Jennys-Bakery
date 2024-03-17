@@ -4,26 +4,22 @@
     /* For mobile phones: */
     .containerFrame {
      width: 100%; 
-      display:block;
-      text-align:center
+      display:inline-block;
+    
       
     }
-    .pagination_buttons {
-        left: 50%
-      }
+   
   }
 
   @media only screen and (max-width: 726px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
     .containerFrame {
       width: 100%;
-      display:block;
-      text-align:center;
+      display:inline-block;
+     
       
     }
-    .pagination_buttons {
-    left: 50%
-  }
+   
   }
 
 
