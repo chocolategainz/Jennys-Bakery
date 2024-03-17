@@ -1,9 +1,9 @@
 
 /*Mobile Phone responsiveness*/
-@media only screen and (max-width: 100%) and (orientation: portrait) { /*480px or lower*/
+@media only screen and (max-width: 75%) and (orientation: portrait) { /*480px or lower*/
     /* For mobile phones: */
     .containerFrame {
-     width: 852px; 
+     width: 848px; 
       display:block;
       text-align:center;
     }
@@ -12,7 +12,7 @@
   @media only screen and (min-device-width: 52%) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
     .containerFrame {
-      width: 1299px;
+      width: 1100px;
       display:block;
       text-align:center;
     }
