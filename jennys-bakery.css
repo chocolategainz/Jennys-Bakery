@@ -9,7 +9,7 @@
     }
   }
 
-  @media only screen and (min-device-width: 936px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 726px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
     .containerFrame {
       width: 100%;
