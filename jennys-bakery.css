@@ -4,16 +4,16 @@
     /* For mobile phones: */
     .containerFrame {
      max-width: 100%; 
-      display:block;
+      display:flex;
       text-align:center;
     }
   }
 
-  @media only screen and (min-device-width: 768px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 936px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
     .containerFrame {
-      max-width: 100%;
-      display:block;
+      width: 100%;
+      display:flex;
       text-align:center;
     }
   }
