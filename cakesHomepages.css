@@ -15,7 +15,7 @@ body {
 
   @media only screen and (min-width: 758px) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
-    .responsiveContainer {
+    .responsiveContainer , body {
       width: 100%;
     }
    #cakePicture {
