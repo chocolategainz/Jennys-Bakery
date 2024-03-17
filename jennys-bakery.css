@@ -3,8 +3,8 @@
 @media only screen and (max-width: 480px) and (orientation: portrait) { /*480px or lower*/
     /* For mobile phones: */
     .containerFrame {
-     max-width: 100%; 
-      display:flex;
+     width: 100%; 
+      
       
     }
   }
@@ -13,7 +13,7 @@
     /* For mobile phones in landscape mode */
     .containerFrame {
       width: 100%;
-      display:flex;
+      
       
     }
   }
@@ -296,17 +296,17 @@ text-align: center;
 /*Pagination*/
 
 .pagination_buttons {
-    display:inline-block;
-    position:relative;
-    left: 20%;
+   position:relative;
+   left: 30%;
+   display:inline-block;
 }
 
 .pagination_buttons {
     border-radius: 4px;
     transition-duration: 0.6s;
-    text-align:center;
-    width: 90px;
+    width: 60px;
     font-weight: bold;
+    text-align: center;
 }
 
 
