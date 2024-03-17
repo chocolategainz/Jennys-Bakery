@@ -8,7 +8,9 @@ body {
     .responsiveContainer {
      width: 100%;   
     }
-   
+   #cookieImage {
+    width:100%;
+   }
   }
 
   @media only screen and (min-width: 758px) and (orientation: landscape) {
@@ -16,7 +18,9 @@ body {
     .responsiveContainer {
       width: 100%;   
     }
-   
+   #cookieImage {
+    width:100%;
+   }
   }
 
 .positionedMenu {
