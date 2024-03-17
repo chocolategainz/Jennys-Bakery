@@ -3,26 +3,21 @@
 @media only screen and (max-width: 100%) and (orientation: portrait) { /*480px or lower*/
     /* For mobile phones: */
     .containerFrame {
-     width: 846px; 
+     width: 852px; 
       display:block;
       text-align:center;
     }
   }
 
-  @media only screen and (min-device-width: 50%) and (orientation: landscape) {
+  @media only screen and (min-device-width: 52%) and (orientation: landscape) {
     /* For mobile phones in landscape mode */
     .containerFrame {
-      width: 1094px;
+      width: 1299px;
       display:block;
       text-align:center;
     }
   }
 
-  @media screen and (min-device-width: 50%) and (orientation: landscape){
-    .containerFluidMenu {
-        width:100%;
-    }
-  }
 
   /*
   @media only screen and (min-width:481px) and (max-width: 1240px) { /*between 481px to 768px*/
