@@ -1,28 +1,28 @@
 body {
-    max-width: 100%;
-    max-height: 100%;
     background-color: pink;  
 }
 
 /*Mobile Phone responsiveness*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 554px) and (orientation: portrait) { /*480px or lower*/
     /* For mobile phones: */
-    body {
-      width: 100%;
+    .pageResponsiveness {
+     width: 100%;   
     }
+   #pieInTheSky {
+    width:100%;
+   }
   }
 
-  @media only screen and (max-width: 1024px) {
-    /*For Tablets*/
-    body {
-        width: 100%;
-      }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    /* For mobile phones in landscape mode */
+   .pageResponsiveness {
+      width: 100%;   
+    }
+   #pieInTheSky {
+    width:100%;
+   }
   }
-/*
-.container {
-    margin-top: 10px; 
-}
-*/
+
 
 #headerButtons {
     position:relative;
