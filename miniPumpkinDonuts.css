@@ -1,13 +1,6 @@
 body {
-    max-width: 100%;
-    max-height: 100%;
     background-color: pink;  
 }
-/*
-.container {
-    margin-top: 10px; 
-}
-*/
 
 .positionedMenu {
    position:relative;
