@@ -294,11 +294,12 @@ text-align: center;
 
 
 /*Pagination*/
+#paginationMaker {
+   text-align: center; 
+}
 
 .pagination_buttons {
-   position:relative;
-   left: 16px;
-   display:inline-block;
+   display:inline-block; 
 }
 
 .pagination_buttons {
