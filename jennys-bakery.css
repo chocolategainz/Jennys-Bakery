@@ -123,15 +123,12 @@ span {
    text-align:center;
 }
 
-.cakeItems {
-   /* padding:10px; */
-   padding: 10px;
-}
 
 /*Spaces out all of the bigger cakes evenly and within a center*/
 .bigCakes {
 margin-right: 50px;
 font-weight:550;
+padding: 10px;
 }
 
 .cakeResponsiveness {
@@ -152,7 +149,7 @@ font-weight:550;
    text-align:center;
 }
 
-.cupcakeItems {
+.smallCake {
     padding: 10px;
     text-align:center;
     font-weight:550;
@@ -177,7 +174,7 @@ font-weight:550;
 }
 
 /*Creates 10 pixels of space between each image*/
-.pieItem {
+.pieTime {
     padding:10px;
     font-weight:550;
 }
@@ -188,7 +185,6 @@ font-weight:550;
     height: auto;
     display: block;
   }
-
 
 
 .newsIntroduction {
