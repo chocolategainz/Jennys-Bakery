@@ -131,6 +131,22 @@ font-weight:550;
 padding: 10px;
 }
 
+#tuxedoCakePicture {
+padding-top:30px;
+}
+
+#tuxedoCakeTitle {
+padding-top: 32px;
+}
+
+#blueberryCakeTitle {
+    padding-top: 30px;
+}
+
+img.img-fluid#blueberryCheesecakePicture {
+    padding-top: 30px;
+}
+
 .cakeResponsiveness {
     width: 100%;
     height: auto;
@@ -161,6 +177,11 @@ padding: 10px;
     display: block;
 }
 
+#oreoCakeTitle {
+    padding-top:20px;
+}
+
+
 /*Container for Pie selection*/
 .pieBoxModel {
     max-width:1200px;
@@ -171,6 +192,7 @@ padding: 10px;
     align-items:center;
    /*text-align: center;*/
    text-align:center;
+   
 }
 
 /*Creates 10 pixels of space between each image*/
