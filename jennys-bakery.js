@@ -64,12 +64,23 @@ const paginationData = [
 function displayedPages (dynamicPages) {
     //Here we are assigning each calculation with the start and end of the array. 
     const index = (dynamicPages - 1); //current page
-if(index >= 0 && index <= paginationData.length) {
+if(index >= 0 && index <= paginationData.length) { //If the page number is less than 0, or greater than 0, then the next data will display
     const data = paginationData[index];
 //We want to to reference our HTML ID called content
-const contentContainer = document.getElementById('content');
-//We are going to empty out our HTML container and also enable access to it
-contentContainer.innerHTML = '';
+const contentContainer = document.getElementById('content'); //targets our id html element
+contentContainer.innerHTML = ''; //Data is injected here depending on the page number, but also clears the current data whenever the user navigates to a different page number
+
+/*
+Example:
+contentContainer.innerHTML = `
+    <div>
+        <img src="${data.image}" alt="${data.name}">
+        <h2>${data.name}</h2>
+        <p>${data.description}</p>
+        <p>Date: ${data.date}</p>
+    </div>
+`;
+*/
 
 
 

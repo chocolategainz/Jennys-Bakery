@@ -249,16 +249,23 @@ images(Sally's baking recipes)-->
 <p class = 'competitionReward'>Become our baker of the month and recieve a shout out from <span id = 'designForByline'>Jenny's bakery</span></p>
 
 
-<!--Dynamic Pagination-->
+<!--Dynamic Pagination
+How did you implement dynamic pagination into your work?
+HTML
+1. Firstly, I used the div property in HTML to create two elements "PaginationContent" & "PaginationContainer"
+2. PaginationContent was were the cake items were stored
+3. PaginationContainer was were the page numbers/navigation were stored
+
+JavaScript
+1. I made two global variables. One called "currentPage" to track the current page number and "itemsPerPage" which determines how many items are displayed per page. Both are set to 1
+2. I made an array that holds specific information about my food. For instance, images, title, descriptions and the date
+3. 
+
+-->
 
   <div id = "paginationContent">
     <!--Link Content will go in here-->
-   
   </div>
-
-
-
-
 
 <!--Pagination navugation bar-->
 <div class = "paginationContainer">
