@@ -61,11 +61,11 @@ width = "290px">
 </body>
 
 <script>
-    const apiID = '632091';
-const apiEndpoint = 'https://spoonacular.com/recipes/almond-and-cranberry-shortbread-632091';
-const apiKey = 'dbc76097489441f7b1ecf57258e459eb';
+    const apiID = '632091'; //ID of the specific recipe
+const apiEndpoint = 'https://spoonacular.com/recipes/almond-and-cranberry-shortbread-632091'; //This was used so that I can get access to that specific web page that displays the recipe
+const apiKey = 'dbc76097489441f7b1ecf57258e459eb'; //My personal api key to gain access to Spoonacular's API services
 
-const recipeAPI = `https://api.spoonacular.com/recipes/${apiID}/information?apiKey=${apiKey}`;
+const recipeAPI = `https://api.spoonacular.com/recipes/${apiID}/information?apiKey=${apiKey}`; //This constructs the final URL used in the fetch request
 
 const ingredients = 'Almond and cranberry shortbread';
 
