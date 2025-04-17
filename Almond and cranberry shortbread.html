@@ -75,17 +75,17 @@ const ingredients = 'Almond and cranberry shortbread';
 
     
     //This is a promise. 
-    fetch(recipeAPI) 
-    .then(response => {
-        if(!response.ok) {
-            throw new Error(`HTTP Error Status: ${response.status}`);
+    fetch(recipeAPI) //Sends a request to retrieve data from Spoonacular. It targets the recipeAPI variable which holds the API ID & the API key.
+    .then(response => { //Then JavaScript responds to that data
+        if(!response.ok) { //If the response is not ok..
+            throw new Error(`HTTP Error Status: ${response.status}`); //Throw an error detailing the response status
         }
-        return response.json();
+        return response.json(); // ..but if the response is correct, then respond by posting the data in a way that JavaScript can translate and understand the response
     })
-    .then(data => {
-        if (data) {
+    .then(data => { //Checks if the data is valid
+        if (data) { //If the data is valid...
                         const cookieIngredients = data.extendedIngredients.map(ingredient => `<li>${ingredient.original}</li>`).join('');
-
+//loop through each ingredient and render them to the HTML document in an unordered list
                         const recipeHtml = `
                             <h2>${data.title}</h2>
                             <img src="${data.image}" alt="${data.title}">
@@ -103,13 +103,13 @@ const ingredients = 'Almond and cranberry shortbread';
         console.log(data);
     }) 
     .catch(error => {
-        console.error('Fetch error:', error);
+        console.error('Fetch error:', error); //This will catch and log errors that occur during the data fetch
     });
 
  }
 
  window.onload = function () {
-            loadDoc();
+            loadDoc(); //Data is automatically fetched and rendered when the page loads
         };
 
 </script>
