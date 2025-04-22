@@ -42,11 +42,14 @@ console.log(multiply);
 
 /*Pagination*/
 /*Global Variables*/
-let currentPage = 1;
-const itemsPerPage = 1;
+let currentPage = 1; //Block-level scope. Tracks which page of items is currently shown
+const itemsPerPage = 1; //Controls how many items will appear per page.
 
 
 //I am using an array of objects to store and define multiple elements under the same delaration for refrencing and iteration
+//Array of objects that holds data based on a fake submission request (cake image, name, description, date). 
+//Pagination will run through here.
+
 const paginationData = [
     {image: 'submissions for competition/Basque Cake.png', name: 'Basque Cake', description:'Congratulations Caitlin', date: 'May 2023'},
     {image: 'submissions for competition/Victoria Spongecake.png', name: 'Victoria Spongecake', description: 'Congratulations Ben', date: 'April 2023'},
@@ -56,7 +59,7 @@ const paginationData = [
     {image: 'submissions for competition/Brownie Cake.png', name: 'Brownie Cake', description: 'Congratulations John', date: 'December 2022'},
     {image: "submissions for competition/rainbowCake.png", name: 'Rainbow Cake', description: 'Congratulations Katie', date: 'November 2022'},
     {image: 'submissions for competition/chocolate cake.png', name: 'Chocolate Cupcake', description: 'Congratulations Alice', date: 'October 2022'}
-];
+]; 
 
 //The dynamicPages parameter represents the value of the current page. 
 function displayedPages (dynamicPages) {
@@ -156,6 +159,7 @@ dynamicPagination.appendChild(attach);
 }
  }
 
+//Runs these functiond on the load of the page to show the first item and the pagination bar
 displayedPages(currentPage);
 paginationCreation();
 
