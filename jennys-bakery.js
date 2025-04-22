@@ -58,8 +58,6 @@ const paginationData = [
     {image: 'submissions for competition/chocolate cake.png', name: 'Chocolate Cupcake', description: 'Congratulations Alice', date: 'October 2022'}
 ];
 
-
-
 //The dynamicPages parameter represents the value of the current page. 
 function displayedPages (dynamicPages) {
     //Here we are assigning each calculation with the start and end of the array. 
@@ -80,39 +78,6 @@ contentContainer.innerHTML = `
         <p>Date: ${data.date}</p>
     </div>
 `;
-*/
-
-
-
-/*
-
-let previousPage = document.getElementById('backButton');
-previousPage.addEventListener('click' , function() {
-if (currentPage > 0) {
-    currentPage--;
-    displayedPages(currentPage);
-    paginationCreation();
-} 
- });
-
- let nextPage = document.getElementById('forwardButton');
- nextPage.addEventListener('click' , function (){
-    if (currentPage < Math.ceil(paginationData.length / itemsPerPage)) {
-        currentPage++;
-        displayedPages(currentPage);
-        paginationCreation();
-        
-      }
-
- });
-*/
-
-
-/*
-//If the start index is less than the end of the index in our array then iterate the loop.
-for (i = startIndex; i <= endIndex; i++) {
-    //if the start index is greater or equal to our entire array then break the loop as soon as possible
-    if (startIndex >= paginationData.length) break;
 */
 
 //We are assigning a new variable called item to our paginationData from the start of the index.
